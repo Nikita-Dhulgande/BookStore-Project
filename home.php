@@ -20,7 +20,7 @@ if (isset($_POST['add_to_cart'])) {
     $message[] = 'Already added to cart!';
   } else {
     mysqli_query($conn, "INSERT INTO `cart`(user_id,name,price,quantity,image) VALUES ('$user_id','$pro_name','$pro_price','$pro_quantity','$pro_image')") or die('query2 failed');
-    $message[] = 'Product added to cart!';
+    $message[] = 'Product added to cart!!';
   }
 }
 
